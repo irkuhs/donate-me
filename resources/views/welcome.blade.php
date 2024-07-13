@@ -3,18 +3,12 @@
 <!--begin::Head-->
 
 <head>
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Donate-Me') }}</title>
     <meta charset="utf-8" />
     <meta name="description"
-        content="EduMS is a platform that offers information on every element of education. The aims are to monitor the education programs offered by the KPTM and manage the distribution and allocation of educational resources. Additionally, it is responsible for organizing, planning and strategizing work processes to execute the education system smoothly. Apart from contributing to academics, it can also help management with various tasks. EduMS can ease the students and staff to connect with each other and achieve the organizational objectives. Apart from that, EduMS provides an engaging student experience with a single point of access and hub to all applications, information and content." />
-    <meta name="keywords" content="Education, Student, Learning, KPTM" />
+        content="Donate-Me adalah sebuah platform dimana ruang untuk donate bagi sesiapa." />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:type" content="article" />
-    <meta property="og:title" content="EduMS - Education Management System" />
-    <meta property="og:url" content="https://www.kptm.edu.my/ms/" />
-    <meta property="og:site_name" content="UPTM EduMS" />
-    <link rel="shortcut icon" href="{{ asset('staff/src/media/logos/KPTM-Logo.png') }}" />
+    <link rel="shortcut icon" href="{{ asset('metronic/src/media/irkuhs/irkuhs-1.png') }}" />
     <!--begin::Fonts(mandatory for all pages)-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
     <!--end::Fonts-->
@@ -28,37 +22,29 @@
 <!--begin::Body-->
 
 <body id="kt_body" class="app-blank app-blank bgi-size-cover bgi-position-center bgi-no-repeat">
-    <!--begin::Theme mode setup on page load-->
-    <script>
-        var defaultThemeMode = "light";
-        var themeMode;
-        if (document.documentElement) {
-            if (document.documentElement.hasAttribute("data-theme-mode")) {
-                themeMode = document.documentElement.getAttribute("data-theme-mode");
-            } else {
-                if (localStorage.getItem("data-theme") !== null) {
-                    themeMode = localStorage.getItem("data-theme");
-                } else {
-                    themeMode = defaultThemeMode;
-                }
-            }
-            if (themeMode === "system") {
-                themeMode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-            }
-            document.documentElement.setAttribute("data-theme", themeMode);
-        }
-    </script>
-    <!--end::Theme mode setup on page load-->
     <!--begin::Root-->
     <div class="d-flex flex-column flex-root" id="kt_app_root">
         <!--begin::Page bg image-->
         <style>
             body {
-                background-image: url({{ asset('staff/src/media/auth/bg6.jpg') }});
+                /* background-image: url({{ asset('staff/src/media/auth/bg6.jpg') }}); */
+                background-color: #000000;
             }
 
             [data-theme="dark"] body {
-                background-image: url({{ asset('staff/src/media/auth/bg6.jpg') }});
+                background-color: #000000;
+            }
+
+            .centered-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .centered-image {
+                width: 70%;
+                height: 70%;
+                border: 2px solid black;
             }
         </style>
         <!--end::Page bg image-->
@@ -69,13 +55,10 @@
                 <!--begin::Aside-->
                 <div class="d-flex flex-center flex-lg-start flex-column">
                     <!--begin::Logo-->
-                    <a href="#" class="mb-6">
-                        <img alt="Logo" src="{{ asset('staff/dist/assets/media/logos/kptm_logo.png') }}" style="width: auto; height:180px;" />
+                    <a href="#" class="mb-6 centered-container">
+                        <img alt="Logo" src="{{ asset('metronic/src/media/irkuhs/irkuhs-2.png') }}" class="centered-image" />
                     </a>
                     <!--end::Logo-->
-                    <!--begin::Title-->
-                    <h2 class="text-dark fw-normal m-0">UPTM Educational Management System</h2>
-                    <!--end::Title-->
                 </div>
                 <!--begin::Aside-->
             </div>
@@ -93,10 +76,10 @@
                             <!--begin::Heading-->
                             <div class="text-center mb-11">
                                 <!--begin::Title-->
-                                <h1 class="text-dark fw-bolder mb-3">Sign In</h1>
+                                <h1 class="text-dark fw-bolder mb-3">Donate-Me</h1>
                                 <!--end::Title-->
                                 <!--begin::Subtitle-->
-                                <div class="text-gray-500 fw-semibold fs-6">Sign in to continue to UPTM EduMS Portal.
+                                <div class="text-gray-500 fw-semibold fs-6">This platform is created by IRKUHS.
                                 </div>
                                 <!--end::Subtitle=-->
                             </div>
