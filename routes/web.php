@@ -16,3 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::post('/donate', function () {
+    $amount = request()->input('amount');
+    return back()->with('success', 'Thank you for your donation of RM ' . $amount . '!');
+})->name('donate');
