@@ -1,5 +1,1 @@
-# Ignore all vendor directories
-**/vendor/*
-
-# Allow the Laravel vendor directory at the root
-!/vendor/
+/vendor
