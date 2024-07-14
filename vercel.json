@@ -29,6 +29,5 @@
         "NODE_PATH": "node"
     },
 
-    "outputDirectory": "public",
-    "excludeFiles": "./public/*"
+    "outputDirectory": "public"
 }
