@@ -30,5 +30,5 @@
         "NODE_PATH": "node"
     },
 
-    "outputDirectory": "public",
+    "outputDirectory": "public"
 }
