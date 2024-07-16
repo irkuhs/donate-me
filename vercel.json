@@ -3,9 +3,15 @@
     "functions": {
         "api/index.php": { "runtime": "vercel-php@0.6.0" }
     },
+    "rewrites": [
+        {
+            "source": "/(.*)",
+            "destination": "/public/$1"
+        }
+    ],
     "routes": [
         {
-            "src": "/(.*)",
+            "src": "/api/(.*)",
             "dest": "/api/index.php"
         }
     ],
