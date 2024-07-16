@@ -40,23 +40,31 @@
                 }
 
                 .d-flex {
-                    display: flex;
-                }
+    display: flex;
+    flex-wrap: wrap; /* Allows buttons to wrap on smaller screens */
+}
 
-                .justify-content-between {
-                    justify-content: space-between;
-                }
+.justify-content-between {
+    justify-content: space-between;
+}
 
-                .btn-secondary {
-                    flex: 1;
-                    margin: 0 5px;
-                }
+.btn-secondary {
+    flex: 1;
+    margin: 5px; /* Adjusted margin for better spacing */
+}
 
-                .custom-card {
-                    border: 2px solid #d86b11;
-                    border-radius: 10px;
-                    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-                }
+.custom-card {
+    border: 2px solid #d86b11;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 576px) {
+    .btn-secondary {
+        flex: 0 0 100%; /* Buttons will take full width on small screens */
+    }
+}
+
             </style>
             <div class="d-flex flex-column flex-column-fluid flex-lg-row">
                 <div class="d-flex flex-center w-lg-50 pt-15 pt-lg-0 px-10">
