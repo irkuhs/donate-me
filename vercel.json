@@ -14,7 +14,7 @@
         },
         {
             "src": "/media/(.*)",
-            "dest": "/public/irkuhs/"
+            "dest": "/public/media/"
         },
         {
             "src": "/(.*)",
