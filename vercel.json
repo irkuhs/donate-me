@@ -13,8 +13,8 @@
             "dest": "/public/metronic/"
         },
         {
-            "src": "/media/(.*)",
-            "dest": "/public/media/"
+            "src": "/resources/(.*)",
+            "dest": "/public/resources/"
         },
         {
             "src": "/(.*)",
