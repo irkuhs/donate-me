@@ -14,7 +14,7 @@
         },
         {
             "src": "/resources/(.*)",
-            "dest": "/public/resources/"
+            "dest": "/public/resources/media"
         },
         {
             "src": "/(.*)",
