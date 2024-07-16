@@ -13,6 +13,10 @@
             "dest": "/public/metronic/"
         },
         {
+            "src": "/media/(.*)",
+            "dest": "/public/metronic/src/media/"
+        },
+        {
             "src": "/(.*)",
             "dest": "/api/index.php"
         }
