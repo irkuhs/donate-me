@@ -8,7 +8,7 @@
     <meta name="description"
         content="Donate-Me adalah sebuah platform dimana ruang untuk donate bagi sesiapa." />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" href="{{ asset('resources/media/irkuhs-1.png') }}" />
+    <link rel="shortcut icon" href="{{ asset('resources/media/Irkuhs-1.png') }}" />
     <!--begin::Fonts(mandatory for all pages)-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
     <!--end::Fonts-->
@@ -62,7 +62,7 @@
                 <div class="d-flex flex-center w-lg-50 pt-15 pt-lg-0 px-10">
                     <div class="d-flex flex-center flex-lg-start flex-column">
                         <a href="#" class="mb-6 centered-container">
-                            <img alt="Logo" src="{{ asset('resources/media/irkuhs-2.png') }}" class="centered-image" />
+                            <img alt="Logo" src="{{ asset('resources/media/Irkuhs-2.png') }}" class="centered-image" />
                         </a>
                     </div>
                 </div>
