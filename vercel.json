@@ -5,6 +5,14 @@
     },
     "routes": [
         {
+            "src": "/build/(.*)",
+            "dest": "/public/build/"
+        },
+        {
+            "src": "/metronic/(.*)",
+            "dest": "/public/metronic/"
+        },
+        {
             "src": "/(.*)",
             "dest": "/api/index.php"
         }
